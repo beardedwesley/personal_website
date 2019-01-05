@@ -1,0 +1,50 @@
+/** Main Rules **/
+body{
+	background-image: url("images/ai-artificial-intelligence-blur-546819.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+	/** Back-up settings if no image */
+	background-color: #006699;
+}
+
+header{
+	background-color: #FFFF;
+	text-align: center;
+	margin-right: 19%;
+	margin-left: 19%;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+nav{
+	float: left;
+	width: 15%;
+	margin-right: 2%;
+	margin-left: 2%;
+
+	background-color: #FFFF;
+}
+
+article{
+	background-color: #FFFF;
+	margin-right: 19%;
+	margin-left: 19%;
+	padding: 2%;
+}
+
+footer{
+
+}
+
+
+/** Special Classes **/
+ul.nav{
+	list-style: none;
+}
+
+h3.nav{
+	text-align: center;
+}
