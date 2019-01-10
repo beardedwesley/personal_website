@@ -1,0 +1,143 @@
+/** Main Rules **/
+body{
+	background-image: url("/images/code1080.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+	font-family: Verdana, Geneva, sans-serif;
+	font-family: Tahoma, Geveva, sans-serif;
+
+	/** Back-up settings if no image */
+	background-color: #000000;
+}
+
+header{
+	background-color: #FFFFFF;
+	opacity: .9;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #6699CC;
+	text-align: center;
+
+	/** Spacing */
+	margin-right: 19%;
+	margin-left: 19%;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+nav{
+	background-color: #FFFFFF;
+	opacity: .9;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #6699CC;
+
+	/** Spacing */
+	float: left;
+	position: fixed;
+	width: 15%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+article{
+	background-color: #FFFFFF;
+	opacity: .9;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #6699CC;
+
+	/** Spacing */
+	margin-right: 19%;
+	margin-left: 19%;
+	padding: 2%;
+}
+
+footer{
+
+}
+
+input{
+	padding: 10px;
+	margin: 10px;
+}
+
+select{
+	padding: 10px;
+	margin: 10px;
+}
+
+textarea{
+	width: 80%;
+	height: 300px;
+	resize: none;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/** Special Classes **/
+ul.nav{
+	list-style: none;
+	margin: 0 0 10px 0;
+	padding: 0;
+	text-align: center;
+	color: #FFFFFF;
+}
+ul.workDuties{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+h3.nav{
+	text-align: center;
+}
+
+a.nav{
+	background-color: #003399;
+	border-radius: 10px;
+	text-decoration: none;
+	display: inline-block;
+
+	/** Spacing */
+	width: 70%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+a.nav:link{
+	color: white;
+}
+
+a.nav:visited{
+	color: white;
+}
+
+a.nav:hover{
+	color: red;
+}
+
+img.profile{
+	float: right;
+	opacity: 1;
+	height: 200px;
+
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+article.row{
+	display: flex;
+}
+
+div.columnLeft{
+	flex: 25%;
+}
+
+div.columnRight{
+	flex: 75%;
+}
