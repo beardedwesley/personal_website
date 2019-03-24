@@ -1,103 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
+
 <head>
 	<title>Wesley Stevens</title>
 	<link rel="stylesheet" type="text/css" href="/styles/main.css" />
 	<meta charset="utf-8">
 	<meta name="author" content="Wesley Stevens">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/scripts/mainFunction.js" defer="true"></script>
 </head>
-<body style="background-image: url(/images/harddrive1080.jpeg)">
-	<header>
-		<h1>R&eacute;sum&eacute;</h1>
-	</header>
 
-	<nav>
-		<h3 class="nav">Navigation</h3>
-		<ul class="nav">
-			<li><a class="nav" href="/index.html">Home</a></li>
-			<li><a class="nav" href="resume.html">R&eacute;sum&eacute;</a></li>
-			<li><a class="nav" href="contact.html">Contact Me</a></li>
-		</ul>
+<body>
+
+	<nav class="row col-12 menuButton" id="nav">
+		<a href="javascript:void(0);" id="menuButton" onclick="toggleMenu()">
+			<span id="icon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</span>
+		</a>
+		<a href="/index.html">Home</a>
+		<a id="activeNav" href="/pages/resume.html">R&eacute;sum&eacute;</a>
+		<a href="/pages/contact.html">Contact Me</a>
 	</nav>
 
-	<article class="row">
-		<div class="columnLeft">
-		<h2>Soft Skills</h2>
-		<ul>
-			<li>Customer Service</li>
-			<li>Detail Oriented</li>
-			<li>Problem Solving</li>
-			<li>Communication</li>
-			<li>Time Management</li>
-		</ul>
+	<div class="row"><div class="col-2 empty"></div>
+		<header class="col-8">
+			<h1>R&eacute;sum&eacute;</h1>
+		</header>
+	<div class="col-2 empty"></div></div>
 
-		<h2>Hard Skills</h2>
-		<ul>
-			<li>Data Analysis</li>
-			<li>Version Repository</li>
-			<li>Data Structures</li>
-			<li>Debugging</li>
-		</ul>
+	<div class="row"><div class="col-2 empty"></div>
+		<section class="col-3">
+			<h2>Soft Skills</h2>
+			<ul>
+				<li>Customer Service</li>
+				<li>Detail Oriented</li>
+				<li>Problem Solving</li>
+				<li>Communication</li>
+				<li>Time Management</li>
+			</ul>
 
-		<h2>Languages</h3>
-		<ul>
-			<li>Assembly</li>
-			<li>Bash commands</li>
-			<li>C/C++</li>
-			<li>CSS3</li>
-			<li>HTML5</li>
-			<li>Java</li>
-			<li>JavaScript</li>
-			<li>JQuery</li>
-			<li>mySQL</li>
-			<li>PHP</li>			
-		</ul>
+			<h2>Hard Skills</h2>
+			<ul>
+				<li>Data Analysis</li>
+				<li>Version Repository</li>
+				<li>Data Structures</li>
+				<li>Debugging</li>
+			</ul>
 
-		<h2>Certifications</h2>
-		<ul>
-			<li>CompTIA A+</li>
-			<li>CIW Web Specialist</li>
-		</ul>
-	</div>		
+			<h2>Languages</h2>
+			<ul>
+				<li>Assembly</li>
+				<li>Bash commands</li>
+				<li>C/C++</li>
+				<li>CSS3</li>
+				<li>HTML5</li>
+				<li>Java</li>
+				<li>JavaScript</li>
+				<li>JQuery</li>
+				<li>mySQL</li>
+				<li>PHP</li>			
+			</ul>
 
-	<div class="columnRight">
-		<h2>Education</h2>
-		<p><strong>Western Governor's University - School of I.T.</strong></p>
-		<p>B.S. Software Development</p>
-		<p>Planned Graduation May 2019</p>
+			<h2>Certifications</h2>
+			<ul>
+				<li>CompTIA A+</li>
+				<li>CIW Web Specialist</li>
+			</ul>
+		</section>		
 
-		<p><strong>University of California, San Diego</strong></p>
-		<p>B.S. Computer Science</p>
-		<p>September 2010 - March 2014 | Completed 188 credits</p>
+		<section class="col-5">
+			<h2>Education</h2>
+			<p><strong>Western Governor's University - School of I.T.</strong></p>
+			<p>B.S. Software Development</p>
+			<p>Planned Graduation May 2019</p>
+
+			<p><strong>University of California, San Diego</strong></p>
+			<p>B.S. Computer Science</p>
+			<p>September 2010 - March 2014 | Completed 188 credits</p>
 
 
-		<h2>Work Experience</h2>
-		<p><strong>Auto Damage Adjuster</strong><br>GEICO<br>November 2015 - May 2018</p>
-		<ul class="workDuties">
-			<li>Provide outstanding customer service as a liaison between customers and auto body repair shops</li>
-			<li>Create multimedia documentation of vehicle conditions, estimated repairs, and associated costs</li>
-			<li>Account for and and disburse company funds to customers and body shops</li>
-		</ul>
+			<h2>Work Experience</h2>
+			<p><strong>Auto Damage Adjuster</strong><br>GEICO<br>November 2015 - May 2018</p>
+			<ul class="workDuties">
+				<li>Provide outstanding customer service as a liaison between customers and auto body repair shops</li>
+				<li>Create multimedia documentation of vehicle conditions, estimated repairs, and associated costs</li>
+				<li>Account for and and disburse company funds to customers and body shops</li>
+			</ul>
 
-		<p><strong>Electronics Team Member</strong><br>Target<br>September 2014 - November 2015</p>
-		<ul class="workDuties">
-			<li>Provide excellent customer service while explaining differences between available options</li>
-			<li>Address guest's questions both general and specific to electronics</li>
-			<li>Perform cashier duties using proper cash handling procedures</li>
-			<li>Track inventory and maintain the department's merchandising</li>
-		</ul>
+			<p><strong>Electronics Team Member</strong><br>Target<br>September 2014 - November 2015</p>
+			<ul class="workDuties">
+				<li>Provide excellent customer service while explaining differences between available options</li>
+				<li>Address guest's questions both general and specific to electronics</li>
+				<li>Perform cashier duties using proper cash handling procedures</li>
+				<li>Track inventory and maintain the department's merchandishttp://localhost:8000/index.htmling</li>
+			</ul>
 
-		<p><strong>Research Assistant</strong><br>University of California, San Diego - Department of Linguistics<br>September 2013 - March 2014</p>
-		<ul class="workDuties">
-			<li>Maintain and develop new HTML, CSS, and Javascript content for lab website</li>
-			<li>Create Java-based programs to run complex algorithms processing experiment data stored in Excel documents</li>
-			<li>Interpret between English and ASL at weekly lab meetings and daily as needed</li>
-		</ul>
+			<p><strong>Research Assistant</strong><br>University of California, San Diego - Department of Linguistics<br>September 2013 - March 2014</p>
+			<ul class="workDuties">
+				<li>Maintain and develop new HTML, CSS, and Javascript content for lab website</li>
+				<li>Create Java-based programs to run complex algorithms processing experiment data stored in Excel documents</li>
+				<li>Interpret between English and ASL at weekly lab meetings and daily as needed</li>
+			</ul>
+		</section>
+	<div class="col-2 empty"></div></div>
 
-	</div>
-	</article>
-
-	<footer>
+	<footer class="row col-12">
+		<p>Copyright &copy; 2019 Wesley Stevens. Some rights reserved.</p>
 	</footer>
-</body>
-</html>
+
+</body></html>

@@ -19,9 +19,9 @@
 				<div class="bar3"></div>
 			</span>
 		</a>
-		<a href="/index.html">Home</a>
+		<a id="activeNav" href="/index.html">Home</a>
 		<a href="/pages/resume.html">R&eacute;sum&eacute;</a>
-		<a id="activeNav" href="/pages/contact.html">Contact Me</a>
+		<a href="/pages/contact.html">Contact Me</a>
 	</nav>
 
 	<div class="row"><div class="col-2 empty"></div>
@@ -37,29 +37,10 @@
 			<a href="https://www.github.com/beardedwesley" target="_blank"><img src="/images/github_icon.png" alt="Github icon"></a>
 
 			<h2>Message Me Directly</h2>
-			<form action="/scripts/contact.php" method="post">
-				Name:
-				<input type="text" name="firstName" placeholder="First" autofocus="autofocus" required="required">*
-				<input type="text" name="lastName" placeholder="Last" required="required">*<br>
-
-				Email:
-				<input type="email" name="eMail" placeholder="username@domain" required="required">*<br>
-
-				Telephone:
-				<select name="countryCodes" style="width: 75px">
-					<option value="+1" selected="selected">+1</option>
-					<option value="+44">+44</option>
-					<option value="+52">+52</option>
-				</select>
-				<input type="tel" name="telePhone" placeholder="(xxx) xxx-xxxx"><br>
-
-				Message:*<br>
-				<textarea name="message" placeholder="Type your message here..." required="required"></textarea><br>
-
-				<input type="reset" name="reset">
-				<input type="submit" name="submit">
-			</form>
-			<p>*required</p>
+			
+			<p>Your message has been sent.  Did you want to send another?</p>
+			<button type="button" onclick="formReset()">Yes</button>
+			<button type="button" onclick="goHome()">No</button>
 		</section>
 	<div class="col-2 empty"></div></div>
 

@@ -1,65 +1,117 @@
-/** Main Rules **/
+ 
+/*****************************************************
+******************************************************
+************ Responsive Layout Backbone***************
+******************************************************
+*****************************************************/
+* {
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+	float: left;
+
+	/** Visualize borders of grid boxes 
+	border: 1px solid red; **/
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/** Sizing for Moblie Phones (Default) **/
+@media only screen and (max-width: 1000px) {
+	[class*="col-"]{
+		width: 100%;
+	}
+}
+
+/** Sizing for Desktops */
+@media only screen and (min-width: 1000px) {
+	.col-1{width: 8.33%;}
+	.col-2{width: 16.66%;}
+	.col-3{width: 25%;}
+	.col-4{width: 33.33%;}
+	.col-5{width: 41.66%;}
+	.col-6{width: 50%;}
+	.col-7{width: 58.33%;}
+	.col-8{width: 66.66%;}
+	.col-9{width: 75%;}
+	.col-10{width: 83.33%;}
+	.col-11{width: 91.66%;}
+	.col-12{width: 100%;}
+
+}
+
+
+/*****************************************************
+******************************************************
+******************** Main Rules **********************
+******************************************************
+******************************************************/
+
+
 body{
-	background-image: url("/images/code1080.jpeg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	background-color: #FFFFFF;
+	font-family: charter;
+	font-family: Verdana, Tahoma, sans-serif;
 
-	font-family: Verdana, Geneva, sans-serif;
-	font-family: Tahoma, Geveva, sans-serif;
-
-	/** Back-up settings if no image */
-	background-color: #000000;
+	/** Color Scheme:
+		Blue: 	#0066CC
+		Purple: #6600CC
+		Gray:	#999999
+		White:	#FFFFFF */
 }
 
 header{
-	background-color: #FFFFFF;
-	opacity: .9;
-	border-style: solid;
-	border-radius: 20px;
-	border-color: #6699CC;
 	text-align: center;
-
-	/** Spacing */
-	margin-right: 19%;
-	margin-left: 19%;
-	margin-bottom: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 nav{
-	background-color: #FFFFFF;
-	opacity: .9;
-	border-style: solid;
-	border-radius: 20px;
-	border-color: #6699CC;
-
-	/** Spacing */
-	float: left;
-	position: fixed;
-	width: 15%;
-	margin-right: 2%;
-	margin-left: 2%;
+	background-color: #0066CC;
 }
 
 article{
-	background-color: #FFFFFF;
-	opacity: .9;
-	border-style: solid;
-	border-radius: 20px;
-	border-color: #6699CC;
+	padding: 15px;
+}
 
-	/** Spacing */
-	margin-right: 19%;
-	margin-left: 19%;
-	padding: 2%;
+section{
+	padding: 15px;
 }
 
 footer{
-
+	text-align: center;
 }
 
+/** Custom Font **/
+@font-family {
+	font-family: charter;
+	src: url(/styles/charter/webfonts/charter_regular-webfont.woff);
+}
+@font-family {
+	font-family: charter;
+	src: url(/styles/charter/webfonts/charter_bold-webfont.woff);
+	font-weight: bold;
+}
+@font-family {
+	font-family: charter;
+	src: url(/styles/charter/webfonts/charter_italic-webfont.woff);
+	font-style: italic;
+}
+@font-family {
+	font-family: charter;
+	src: url(/styles/charter/webfonts/charter_bold_italic-webfont.woff);
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*****************************************************
+******************************************************
+******************* Form Specific ********************
+******************************************************
+*****************************************************/
 input{
 	padding: 10px;
 	margin: 10px;
@@ -79,65 +131,90 @@ textarea{
 	margin-bottom: 10px;
 }
 
-/** Special Classes **/
-ul.nav{
-	list-style: none;
-	margin: 0 0 10px 0;
-	padding: 0;
-	text-align: center;
-	color: #FFFFFF;
+button{
+	padding: 10px;
+	margin: 10px;
 }
+
+/*****************************************************
+******************************************************
+****************** Special Classes *******************
+******************************************************
+*****************************************************/
+nav>a:link, nav>a:visited {
+	float: left;
+	display: inline-block;
+	color: #FFFFFF;
+	border: 1px solid #6600CC;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+nav>a:hover {
+	color: #6600CC;
+	background-color: #999999;
+}
+
+#nav>a.collapse {
+	display: none;
+}
+
+#nav>a.small {
+	display: block;
+	float: none;
+	text-align: left;
+}
+
+#activeNav {
+	background-color: #6600CC;
+}
+
+#activeNav:hover {
+	background-color: #999999;
+}
+
+.empty {
+	padding: 15px;
+}
+
 ul.workDuties{
 	margin-top: 0;
 	padding-top: 0;
 }
 
-h3.nav{
-	text-align: center;
-}
-
-a.nav{
-	background-color: #003399;
-	border-radius: 10px;
-	text-decoration: none;
-	display: inline-block;
-
-	/** Spacing */
-	width: 70%;
-	padding: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-a.nav:link{
-	color: white;
-}
-
-a.nav:visited{
-	color: white;
-}
-
-a.nav:hover{
-	color: red;
-}
-
 img.profile{
 	float: right;
-	opacity: 1;
 	height: 200px;
 
 	margin-right: 20px;
 	margin-left: 20px;
+
+	border: 5px solid #0066CC;
 }
 
-article.row{
-	display: flex;
+.menuButton{
+	cursor: pointer;
 }
 
-div.columnLeft{
-	flex: 25%;
+.bar1, .bar2, .bar3{
+	width: 20px;
+	height: 3px;
+	background-color: #333;
+	margin: 3px 0px;
+	transition: 0.1s;
 }
 
-div.columnRight{
-	flex: 75%;
+.change .bar1{
+	-webkit-transform: translate(-2px, 6px) rotate(-45deg);
+	transform: translate(-2px, 6px) rotate(-45deg);
+}
+
+.change .bar2{
+	opacity: 0;
+}
+
+.change .bar3{
+	-webkit-transform: translate(-2px, -6px) rotate(45deg); 
+	transform: translate(-2px, -6px) rotate(45deg);
 }
